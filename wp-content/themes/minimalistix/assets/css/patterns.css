@@ -1,0 +1,54 @@
+/* Off canvas close button fix */
+.wp-block-navigation__responsive-container.is-menu-open {
+	padding:20px !important;
+}
+
+
+/* Patterns fix */
+
+.blog-two-columns .wp-block-post-featured-image {
+	min-width:40% !important;
+}
+@media only screen and (max-width: 750px) {
+	.blog-two-columns .wp-block-post-featured-image {
+		min-width:100% !important;
+	}
+	.blog-two-columns .has-post-thumbnail .wp-block-group{
+		-ms-flex-wrap:wrap !important;
+		    flex-wrap:wrap !important;
+	}
+}
+@media only screen and (min-width: 600px) {
+	.author-introduction-pattern .wp-block-media-text .wp-block-media-text__content {
+		padding:0 4%;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.author-introduction-pattern .wp-block-media-text  {
+		text-align:center;
+	}
+	.author-introduction-pattern .wp-block-media-text__media{
+		text-align:center;
+	}
+	.author-introduction-pattern .wp-block-media-text__media img{
+		max-width: 100px;
+	}
+
+}
+
+/* WooCommerce */
+.woocommerce-page.woocommerce-uses-block-theme .woocommerce-ordering select{
+    padding: 12px 40px 12px 25px;
+    background-color: #fff;
+    cursor: pointer;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNSIgdmlld0JveD0iMCAwIDEwIDUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+DQo8cGF0aCBkPSJNNC41MDQ5NSA0LjgyMDExTDAuMjA1MjQxIDEuMDQ4NTZDLTAuMDY4NDEzNyAwLjgwODY0NiAtMC4wNjg0MTM3IDAuNDE5NjYzIDAuMjA1MjQxIDAuMTc5ODY0QzAuNDc4NjUyIC0wLjA1OTk1NDcgMC45MjIwOTggLTAuMDU5OTU0NyAxLjE5NTQ5IDAuMTc5ODY0TDUuMDAwMDcgMy41MTcxTDguODA0NTIgMC4xNzk5NjFDOS4wNzgwNSAtMC4wNTk4NTc3IDkuNTIxNDUgLTAuMDU5ODU3NyA5Ljc5NDg2IDAuMTc5OTYxQzEwLjA2ODQgMC40MTk3OCAxMC4wNjg0IDAuODA4NzQzIDkuNzk0ODYgMS4wNDg2Nkw1LjQ5NTA4IDQuODIwMkM1LjM1ODMxIDQuOTQwMTEgNS4xNzkyNSA1IDUuMDAwMDkgNUM0LjgyMDg1IDUgNC42NDE2NSA0Ljk0IDQuNTA0OTUgNC44MjAxMVoiIGZpbGw9IiM3Njc2NzYiLz4NCjwvc3ZnPg0K);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 20px) 50%;
+    -webkit-transition: .1s;
+    -o-transition: .1s;
+    transition: .1s;
+    border: 1px solid var(--wp--preset--color--contrast);
+}
